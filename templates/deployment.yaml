@@ -6,7 +6,7 @@ metadata:
     app: nginx
 spec:
   # modify replicas according to your case
-  replicas: "{{ .Values.deployment.ReplicaCount }}"
+  replicas: {{ .Values.deployment.ReplicaCount }}
   selector:
     matchLabels:
       app: nginx
